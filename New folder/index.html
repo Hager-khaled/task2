@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+ border: 1px solid black;
+width: 70%;
+ margin: 0 auto;
+
+}
+.table-1, th, td  {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  color: black;
+
+}
+a{
+    color: black;
+}
+.table{
+ border-spacing: 10px; 
+border: 2px solid #4CAF50;
+}
+.header-table{
+    background-color: #9fdba1;
+}
+p{
+    border: 2px solid #2892b3;
+    text-align: center;
+}
+/* end table one */
+/* start table two */
+.table-2{
+width: 100%;
+text-align: center;
+}
+.table-col-1{
+    background-color: #7e9399;
+  text-align: center;
+}
+.table-col-2{
+    text-align: start;
+}
+/* end table two */
+.two-tables{
+ display: flex;
+ justify-content: center;
+gap: 5px; 
+}
+.table-4 {
+    width: 50%;
+    border: #b48547 3px solid ;
+}
+.table-3{
+    width: 50%;
+    border: #db2da7 3px solid ;
+}
+.table-5{
+    width: 50%;
+margin: auto;
+}
+h4{
+    margin-top: 1em;
+    text-align: center;
+}
+h6{
+text-align: center;
+}
+</style>
+
+<body>
+<div class="container ">
+    <table class="table1">
+        <thead class="header-table">
+            <tr class="links-table">
+                <th colspan="2">links</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Stack Overflow</td>
+                <td><a href="https://stackoverflow.com/">Stack Overflow</a></td>
+                <td>.....</td>
+            </tr>
+            <tr>
+                <td>w3scool</td>
+                <td><a href="https://stackoverflow.com/">Stack Overflow</a></td>
+                <td rowspan="2">.....</td>
+            </tr>
+            <tr>
+                
+                <td>laracasts</td>
+                <td><a href="https://laracasts.com/">laracasts</a></td>
+                <!-- <td>.5....</td> -->
+            </tr>
+            
+        </tbody>
+    </table>
+    <!-- end table one -->
+    <!-- start table one -->
+    <table class="table-2">
+        <thead>
+            <td colspan="3">StockCoders</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-col-1" rowspan="3">send Email from:</td>
+                <td colspan="3" class="table-col-2">
+                    <label for="subject">subject*</label><br>
+                    <input type="subject"><br><br>
+                    <label for="subject">message *</label><br>
+<textarea name="text" placeholder="Enter message..." id=""></textarea><br><br>
+                    <!-- <input type="text" placeholder="Enter message..."><br> -->
+                 
+                    <label for="phone">phone*</label><br>
+                    <input type="text"><br>
+                    <input type="button" value="submit">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td>stackcoder</td>
+          <td><a href="stackcoder@gmail.com">hagersahm360@gmail.com</a></td>
+          <td>6october ,cario</td>
+        </tr>
+    </tfoot>
+    </table>
+    <div class="two-tables">
+   <table class="table-3">
+        <thead class="table-3col-1 ">
+            <td>StockCoders</td>
+            <td>StockCoders</td>
+            <td>StockCoders</td>
+        </thead>
+        <tbody class="table-3col-1">
+            <tr>
+       <td>gggggg</td>
+       <td>gggggg</td>
+       <td>gggggg</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table-4">
+        <thead class="table-3col-1">
+            <td>StockCoders</td>
+            <td>StockCoders</td>
+            <td>StockCoders</td>
+        </thead>
+        <tbody class="table-3col-1">
+            <tr>
+       <td>gggggg</td>
+       <td>gggggg</td>
+       <td>gggggg</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- end -->
+<!-- start table5 -->
+<h4>table5</h4>
+<table class="table-5">
+    <thead>
+        <th>Account number</th>
+        <th>cvv</th>
+        <th>Transactions</th>
+    </thead>
+    <tr>
+    <td>111 111 111</td>
+    <td>000 000 000</td>
+    <td>
+    <table >
+        <h6>Nested Table</h6>
+        <thead>
+            <th>--</th>
+            <th>Transactions</th>
+        </thead>
+    <tr>
+    <td>t1:</td>
+    <td>.........</td>
+    </tr>
+    <tr>
+    <td>t2</td>
+    <td>......</td>
+    </tr>
+    <tr>
+        <td>t3</td>
+        <td>.......</td>
+        </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>
+
+
